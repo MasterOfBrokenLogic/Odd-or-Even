@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even</title>
+</head>
+<body>
+
+    <script>
+        function result() {
+            var n = document.form1.text1.value;
+            {
+                if (n%2==0)
+                document.form1.text2.value="even";
+            else
+                document.form1.text2.value="odd";
+            }
+        }
+    </script>
+
+    <center>
+        <form name="form1">
+            <label for="txt1">Enter the number</label>
+                <input type="text" name="text1" id="txt1"><br><br>
+            <label for="txt2">Result &nbsp;</label>
+                <input type="text" name="text2" id="txt2"><br><br>
+                <input type="button" value="Show" onclick="result()">
+        </form>
+    </center>
+    
+</body>
+</html>
